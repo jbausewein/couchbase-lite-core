@@ -89,8 +89,6 @@ namespace litecore { namespace repl {
 
 
     void C4SocketImpl::registerFactory(const C4SocketFactory &factory) {
-        if (sRegisteredFactory)
-            throw std::logic_error("c4socket_registerFactory can only be called once");
         validateFactory(factory);
         sRegisteredFactory = new C4SocketFactory(factory);
     }

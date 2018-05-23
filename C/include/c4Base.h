@@ -390,6 +390,7 @@ int c4_getObjectCount(void) C4API;
 
 void c4_dumpInstances(void) C4API;
 
+void c4_executeTasks(void) C4API;
 
 #ifdef __cplusplus
 }

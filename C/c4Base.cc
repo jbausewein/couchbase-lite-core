@@ -23,7 +23,8 @@
 
 #include "Logging.hh"
 #include "StringUtil.hh"
-
+#include "Timer.hh"
+#include "ThreadedMailbox.hh"
 #include "WebSocketInterface.hh"
 #include "WebSocketImpl.hh"         // just for WSLogDomain
 #include "SQLiteCpp/Exception.h"
@@ -392,6 +393,11 @@ void c4slog(C4LogDomain c4Domain, C4LogLevel level, C4Slice msg) noexcept {
 
 int c4_getObjectCount() noexcept {
     return gC4InstanceCount + websocket::WebSocket::gInstanceCount;
+}
+
+void c4_executeTasks() noexcept {
+	actor::Scheduler::sharedScheduler()->runSynchronous();
+	actor::Timer::run();
 }
 
 // LCOV_EXCL_START
