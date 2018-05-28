@@ -10,7 +10,6 @@
 [submodule "vendor/BLIP-Cpp"]
 	path = vendor/BLIP-Cpp
 	url=https://github.com/jbausewein/BLIP-Cpp.git
-	branch=unity
 [submodule "vendor/civetweb"]
 	path = vendor/civetweb
 	url = https://github.com/couchbasedeps/civetweb.git
