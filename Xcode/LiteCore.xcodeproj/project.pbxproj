@@ -288,7 +288,6 @@
 		27BF024B1FB62726003D5BB8 /* LibC++Debug.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27BF023C1FB61F5F003D5BB8 /* LibC++Debug.cc */; };
 		27BF024C1FB62727003D5BB8 /* LibC++Debug.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27BF023C1FB61F5F003D5BB8 /* LibC++Debug.cc */; };
 		27C319EE1A143F5D00A89EDC /* KeyStore.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27C319EC1A143F5D00A89EDC /* KeyStore.cc */; };
-		27CE4CF12077F51000ACA225 /* Address.hh in Headers */ = {isa = PBXBuildFile; fileRef = 27CE4CEF2077F51000ACA225 /* Address.hh */; };
 		27CE4CF22077F51000ACA225 /* Address.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27CE4CF02077F51000ACA225 /* Address.cc */; };
 		27CE4CF32077F51000ACA225 /* Address.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27CE4CF02077F51000ACA225 /* Address.cc */; };
 		27CE4CFB207C1A7E00ACA225 /* Address.cc in Sources */ = {isa = PBXBuildFile; fileRef = 27CE4CF02077F51000ACA225 /* Address.cc */; };
@@ -4000,6 +3999,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 273E9FB01C519A1B003115A6 /* LiteCore-dylib.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				STRIP_STYLE = debugging;
 			};
 			name = "Debug-EE";
 		};
@@ -4235,6 +4239,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27FDF1A21DAD79450087B4E6 /* LiteCore-dylib_Release.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				STRIP_STYLE = debugging;
 			};
 			name = "Release-EE";
 		};
@@ -4626,7 +4635,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27B649592069731B00FC12F7 /* LiteCore-framework.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
 				CURRENT_PROJECT_VERSION = 1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4636,7 +4653,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27B649592069731B00FC12F7 /* LiteCore-framework.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
 				CURRENT_PROJECT_VERSION = 1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4646,7 +4671,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2734F60D206978F100C982FF /* LiteCore-framework_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
 				CURRENT_PROJECT_VERSION = 1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4656,7 +4689,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2734F60D206978F100C982FF /* LiteCore-framework_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
 				CURRENT_PROJECT_VERSION = 1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -4734,6 +4775,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 273E9FB01C519A1B003115A6 /* LiteCore-dylib.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				STRIP_STYLE = debugging;
 			};
 			name = Debug;
 		};
@@ -4741,6 +4787,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27FDF1A21DAD79450087B4E6 /* LiteCore-dylib_Release.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos11.3;
+				STRIP_STYLE = debugging;
 			};
 			name = Release;
 		};
