@@ -3971,6 +3971,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 273E9FBA1C519A1B003115A6 /* Project_Debug.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -3978,6 +3982,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 273E9FBB1C519A1B003115A6 /* Project_Release.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -3985,6 +3993,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2791EA192032732500BD813C /* Project_Debug_EE.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = "Debug-EE";
 		};
@@ -4002,7 +4014,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos11.3;
+				SDKROOT = macosx;
 				STRIP_STYLE = debugging;
 			};
 			name = "Debug-EE";
@@ -4225,6 +4237,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2791EA1A203273BF00BD813C /* Project_Release_EE.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = "Release-EE";
 		};
@@ -4242,7 +4258,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos11.3;
+				SDKROOT = macosx;
 				STRIP_STYLE = debugging;
 			};
 			name = "Release-EE";
@@ -4778,7 +4794,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos11.3;
+				SDKROOT = macosx;
 				STRIP_STYLE = debugging;
 			};
 			name = Debug;
@@ -4791,7 +4807,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/LiteCore/Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos11.3;
+				SDKROOT = macosx;
 				STRIP_STYLE = debugging;
 			};
 			name = Release;
